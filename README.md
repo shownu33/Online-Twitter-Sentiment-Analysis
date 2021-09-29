@@ -1,6 +1,2 @@
-# Twitter-Tweet-Sentiment-Analysis
-
-open App.py using python3 to run the program on the flask server.
-
-Main.py does all the works and all the functions are placed in different modules that are imported there.
-Good luck modifying
+# Online-Twitter-Sentiment-Analysis
+I have created a project named twitter sentiment analysis using python and naive bayes algorithm. It fetches latest tweets and display results. Here, I have added sign up and login page to keep record of the visitors.
