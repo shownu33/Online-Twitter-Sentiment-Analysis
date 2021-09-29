@@ -1,0 +1,7 @@
+host="remotemysql.com",
+user="fHr2iyjM7c",
+password="EqayCIgVAM",
+database="fHr2iyjM7c"
+
+id:-aaa@aaa
+password:-aaa

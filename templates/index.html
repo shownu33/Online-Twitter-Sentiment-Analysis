@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Analyzer</title>
+    <style type="text/css">
+        body, html {
+            height: 100%;
+            margin: 0;
+            width: 100%;
+        }
+        .bg {
+          background-image: url('https://1.bp.blogspot.com/-0OseA3ydMEE/WWkt2zltDII/AAAAAAAAAHk/m5XqeWVXnDUoa9if4u2a346y_1C9nVlUgCLcBGAs/s1600/twitter-analytics-fade-ss-1920.jpg');
+          height: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover; 
+        }
+        .btn {
+            position: center;
+            margin-top: 10%;
+            font-weight: 600;
+            font-size: 120%;
+        }
+        .mt-0 {
+            margin-top: 0 !important;
+        }
+        .par{
+            padding-top: 5%;
+            padding-bottom: 0%;
+            font-size: x-large;
+            font-weight: 700;
+            position: center;
+            text-align: center;
+            color: white;
+        }
+        .container-fluid{
+            color: white;
+        }
+        .link {
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body class='bg'>
+    <nav class="navbar navbar-light bg-blue">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light">Analyzer</a>
+            <a href="/logout"><button class="btn btn-outline-success mt-0 text-light" type="submit">Log Out</button></a>
+        </div>
+      </nav>
+    <div class="d-grid gap-0 col-6 mx-auto">
+        <p class="par mt-0">Welcome To Twitter Sentiment Analysis</p>
+        <a href="{{url_for('search')}}" text-decoration="none" class="link" >
+        <button class="btn btn-primary mt-0 p-4" type="button">Start Your Analysis</button>
+        </a>
+        <p class="par">Offline Twitter Sentiment Analysis</p>
+        <a href="{{url_for('offline')}}" text-decoration="none" class="link"><button class="btn btn-primary mt-0 p-4" type="button">Start Offline Analysis</button></a>
+        <p class="par">Test Twitter Sentiment Analysis</p>
+        <a href="{{url_for('test')}}" text-decoration="none" class="link"><button class="btn btn-primary mt-0 p-4" type="button">Start Testing Analysis</button></a>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
